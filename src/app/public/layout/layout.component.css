@@ -1,0 +1,28 @@
+@font-face{
+  font-family: "First-Christmas";
+  src: url('../../../assets/fonts/FirstChristmas.ttf');
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #009c12;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 5px 40px;
+  text-decoration: none;
+  font-family: First-Christmas;
+  font-size: 27px;
+}
+li a:hover{
+  background-color: #9c0201 ;
+}

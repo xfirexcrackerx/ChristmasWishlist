@@ -4,6 +4,9 @@ import { LayoutComponent } from './layout/layout.component';
 import {loginRoutes} from './components/login/login.routes';
 import {addListRoutes} from './components/addList/addList.routes';
 import {giftListRoutes} from './components/gifts-lists/gifts-lists.routes';
+import {forumRoutes} from './components/forum/forum.routes';
+import {userProfileRoutes} from './components/user-profile/user-profile.routes';
+import {registerRoutes} from './components/register/register.routes';
 
 export const publicRoutes: Routes = [
   {
@@ -21,6 +24,18 @@ export const publicRoutes: Routes = [
       {
         path: 'gifts-lists',
         children: [...giftListRoutes]
+      },
+      {
+        path: 'forum',
+        children: [...forumRoutes]
+      },
+      {
+        path: 'user-profile',
+        children: [...userProfileRoutes]
+      },
+      {
+        path: 'register',
+        children: [...registerRoutes]
       }
     ]
   }

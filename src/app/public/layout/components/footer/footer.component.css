@@ -1,3 +1,9 @@
-.text-red  {
-  color: blue;
+div{
+  margin-top: 50px;
+  border-top: 3px dashed white;
+}
+h4{
+  font-size: 14px;
+  color:white;
+  font-family: "Comic Sans MS";
 }

@@ -1,0 +1,21 @@
+@font-face{
+  font-family: "Merry-Christmas-flake";
+  src: url('../../../../../assets/fonts/MerryChristmasFlake.ttf');
+}
+@font-face{
+  font-family: "Merry-Christmas-star";
+  src: url('../../../../../assets/fonts/MerryChristmasStar.ttf');
+}
+.banner {
+  background-image: url("../../../../../assets/images/banner.jpg");
+  height: 150px;
+}
+h1{
+  font-family: Merry-Christmas-star;
+  font-size: 120px;
+  letter-spacing: 7px;
+  text-align: center;
+  color:white;
+
+}
+
