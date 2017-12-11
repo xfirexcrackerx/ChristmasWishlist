@@ -1,11 +1,83 @@
-.border-div {
-  border: 1px solid black;
+@font-face {
+  font-family: BeautyHandwriting;
+}
+.add-list{
+  position:fixed;
+  width:80px;
+  height:80px;
+  bottom:40px;
+  right:60px;
+  background-color:#009c12;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+
+}
+i{
+  font-size: 30px;
+  margin-top: 26px;
+  margin-left: 3px;
 }
 
-.list-title {
-  text-align: center;
+.wishlist{
+  background: url("../../../../../../assets/images/scroll-new.png") no-repeat ;
+  min-height: 1280px;
+  width: 700px;
+  display: inline-block;
+  margin-left: 50px;
 }
 
-.list-owner {
-  text-align: center;
+
+ul{
+  list-style-type: none;
+  width: 600px;
 }
+h2{
+  padding-top: 170px;
+  padding-left: 180px;
+  margin-bottom: 100px;
+  text-shadow: -2px 0 #009c12, 0 2px #009c12,
+  2px 0 #009c12, 0 -2px #009c12;
+  font-size: 45px;
+  color: white;
+}
+li{
+  margin: 15px 0;
+}
+img{
+  width: 60px;
+  height: 60px;
+}
+img,h4,.name-link{
+  display:inline-block;
+  font-size: 20px;
+  font-family: "Lucida Handwriting";
+}
+.name-link {
+  word-wrap: break-word;
+  color: black;
+}
+.name-link:hover{
+  text-decoration: none;
+}
+h4{
+  float: right;
+  color: #009c12;
+  padding-top: 25px;
+}
+.name-link:hover{
+  color: #9c0201;
+}
+.price{
+  margin-left: 480px;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #9c0201;
+
+}
+img{
+  margin-left: 50px;
+
+}
+

@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import {loginRoutes} from './components/login/login.routes';
-import {addListRoutes} from './components/addList/addList.routes';
 import {giftListRoutes} from './components/gifts-lists/gifts-lists.routes';
 import {forumRoutes} from './components/forum/forum.routes';
 import {userProfileRoutes} from './components/user-profile/user-profile.routes';
 import {registerRoutes} from './components/register/register.routes';
+import {homeRoutes} from './components/home/home.routes';
 
 export const publicRoutes: Routes = [
   {
@@ -16,10 +16,6 @@ export const publicRoutes: Routes = [
       {
         path: 'login',
         children: [...loginRoutes]
-      },
-      {
-        path: 'add-list',
-        children: [...addListRoutes]
       },
       {
         path: 'gifts-lists',
@@ -36,6 +32,15 @@ export const publicRoutes: Routes = [
       {
         path: 'register',
         children: [...registerRoutes]
+      },
+      {
+        path: 'home',
+        children: [...homeRoutes]
+      },
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
       }
     ]
   }

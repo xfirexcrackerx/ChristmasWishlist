@@ -1,0 +1,46 @@
+@font-face{
+  font-family: "Santas Sleigh";
+  src: url('../../../../../assets/fonts/SantasSleighFull.ttf');
+}
+@font-face{
+  font-family: "Merry-Christmas-flake";
+  src: url('../../../../../assets/fonts/MerryChristmasFlake.ttf');
+}
+.container{
+  background: rgba(0,0,0,.3);
+  border: 30px solid transparent;
+  padding: 15px;
+  border-image: url(../../../../../assets/images/borderche.png) 70 round;
+  color: white;
+  font-family: "Santas Sleigh";
+}
+h3{
+  font-size: 55px;
+}
+p{
+  font-size: 40px;
+  z-index: 0;
+}
+img{
+  height: 70%;
+  width: 99%;
+  margin-top: 100px;
+}
+.add-list{
+  background-color:#009c12;
+  color:#FFF;
+  padding: 20px;
+  border-radius: 20px;
+  text-align:center;
+  margin-left: 400px;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  top: -40px;
+  font-family: Broadway;
+}
+.add-list:hover{
+  text-decoration: none;
+  text-shadow: -2px 0 #9c0201, 0 2px #9c0201,
+  2px 0 #9c0201, 0 -2px #9c0201;
+}
