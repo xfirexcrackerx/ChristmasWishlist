@@ -2,10 +2,15 @@
 <ul>
 <li><a routerLink="/home" name="home" routerLinkActive="active-link">Home</a></li>
 <li><a routerLink="/gifts-lists" routerLinkActive="active-link">Gifts Lists</a></li>
-<li><a routerLink="/forum" routerLinkActive="active-link">Ideas For Presents</a></li>
-<li><a routerLink="/login" routerLinkActive="active-link">Login</a></li>
-<li><a routerLink="/register" routerLinkActive="active-link">Register</a></li>
-<li><a routerLink="/user-profile" routerLinkActive="active-link">My Profile</a></li>
+<li><a routerLink="/chat" routerLinkActive="active-link">Ask for ideas</a></li>
+<li *ngIf="!cookieService.get('auth')"><a routerLink="/login"  routerLinkActive="active-link">
+  Login</a></li>
+<li *ngIf="!cookieService.get('auth')"><a routerLink="/register"  routerLinkActive="active-link">
+  Register</a></li>
+<li *ngIf="cookieService.get('auth')"><a routerLink="/user-profile"
+                                         routerLinkActive="active-link"
+                                         class="user">{{cookieService.get
+  ('username')}}</a></li>
 </ul>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

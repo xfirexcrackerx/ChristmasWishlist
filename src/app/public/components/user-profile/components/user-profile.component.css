@@ -1,0 +1,12 @@
+li{
+  list-style: none;
+  color: white;
+}
+.logged-in-as{
+  font-size: 25px;
+}
+li .user{
+  color: #009c12;
+  font-size: 30px;
+  text-decoration: underline;
+}

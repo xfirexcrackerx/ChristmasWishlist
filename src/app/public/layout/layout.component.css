@@ -9,6 +9,9 @@ ul {
   overflow: hidden;
   margin-bottom: 20px;
 }
+.user{
+  float: right;
+}
 li {
   display: inline;
   padding: 10px;

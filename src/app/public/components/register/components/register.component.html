@@ -1,29 +1,24 @@
+<div class="container">
+  <img src="../../../../../assets/images/elf-left.png"/>
 <div class="row">
   <div class="col-lg-1">
-    <div>EMAIL:</div>
+    <div class="email-pass">EMAIL:</div>
   </div>
   <div class="col-lg-4">
-    <input class="form-control" type="text" [(ngModel)]="login.password" />
+    <input class="form-control" type="text" [(ngModel)]="register.Email" />
   </div>
 </div>
 <div class="row">
   <div class="col-lg-1">
-    <div>USERNAME:</div>
+    <div class="email-pass">PASSWORD:</div>
   </div>
   <div class="col-lg-4">
-    <input class="form-control" type="text" [(ngModel)]="login.username" />
+    <input class="form-control" type="password" [(ngModel)]="register.Password" />
   </div>
 </div>
-<div class="row">
-  <div class="col-lg-1">
-    <div>PASSWORD:</div>
-  </div>
-  <div class="col-lg-4">
-    <input class="form-control" type="password" [(ngModel)]="login.password" />
-  </div>
 </div>
 <div class="row">
   <div class="col-lg-4">
-    <button class="btn btn-info" (click)="submit()">Вход</button>
+    <button class="button" (click)="submit()">Register</button>
   </div>
 </div>

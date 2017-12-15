@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import {loginRoutes} from './components/login/login.routes';
 import {giftListRoutes} from './components/gifts-lists/gifts-lists.routes';
-import {forumRoutes} from './components/forum/forum.routes';
+import {chatRoutes} from './components/chat/chat.routes';
 import {userProfileRoutes} from './components/user-profile/user-profile.routes';
 import {registerRoutes} from './components/register/register.routes';
 import {homeRoutes} from './components/home/home.routes';
@@ -22,8 +22,8 @@ export const publicRoutes: Routes = [
         children: [...giftListRoutes]
       },
       {
-        path: 'forum',
-        children: [...forumRoutes]
+        path: 'chat',
+        children: [...chatRoutes]
       },
       {
         path: 'user-profile',

@@ -11,7 +11,7 @@
   color:#FFF;
   border-radius:50px;
   text-align:center;
-
+  z-index: 9
 }
 i{
   font-size: 30px;
@@ -26,15 +26,24 @@ i{
   display: inline-block;
   margin-left: 50px;
 }
-
+.del-button{
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.del-button:hover{
+  color: #9c0201;
+}
 
 ul{
   list-style-type: none;
   width: 600px;
 }
 h2{
-  padding-top: 170px;
-  padding-left: 180px;
+  padding-top: 130px;
+  text-align: center;
   margin-bottom: 100px;
   text-shadow: -2px 0 #009c12, 0 2px #009c12,
   2px 0 #009c12, 0 -2px #009c12;
@@ -69,6 +78,7 @@ h4{
   color: #9c0201;
 }
 .price{
+  margin-top: -90px;
   margin-left: 480px;
   font-size: 23px;
   text-transform: uppercase;

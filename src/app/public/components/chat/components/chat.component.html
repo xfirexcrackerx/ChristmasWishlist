@@ -1,0 +1,26 @@
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<div class="container">
+<div class="row">
+  <div class="col-lg-3">
+  <div class="messages">
+    <div *ngIf="!connected && !connecting">
+      Error connecting to the chat!
+    </div>
+    <div *ngIf="connecting">
+      Connecting to the chat
+    </div>
+    <div  *ngFor="let message of messages;">
+      <h4>{{message.name}}:</h4> {{message.message}}
+    </div>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-9">
+    <input [(ngModel)]="message" [disabled]="sending" class="form-control" type="text" />
+  </div>
+  <div class="col-lg-3">
+    <button [disabled]="sending" (click)="sendMessage()" class="button">Send</button>
+  </div>
+</div>
+</div>
